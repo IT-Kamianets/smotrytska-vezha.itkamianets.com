@@ -11,6 +11,7 @@
 
 .footer-block {
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .footer-block .title {
@@ -94,6 +95,19 @@
   color: #bdc3c7;
   font-size: 0.9rem;
   margin: 0;
+}
+
+.footer-developed a {
+  color: #bdc3c7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.footer-developed a:hover {
+  color: #f39c12;
 }
 
 .footer-copyright {

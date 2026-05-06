@@ -1,9 +1,9 @@
 <footer class="footer-component">
   <section class="footer-section">
     <div class="container">
-      <div class="columns">
+      <div class="columns is-multiline">
         <!-- Інформація про готель -->
-        <div class="column is-half-tablet is-one-third-desktop">
+        <div class="column is-full has-text-centered">
           <div class="footer-block">
             <h3 class="title is-5">
               <span class="icon-text">
@@ -16,52 +16,10 @@
             <p class="footer-text">
               Затишний готель у Кам'янці-Подільському з видом на каньйон та історичне місто.
             </p>
-            <div class="social-icons mt-3">
-              <a href="#" class="footer-social facebook" title="Facebook">
-                <i class="fab fa-facebook"></i>
-              </a>
-              <a href="#" class="footer-social instagram" title="Instagram">
-                <i class="fab fa-instagram"></i>
-              </a>
-              <a href="#" class="footer-social viber" title="Viber">
-                <i class="fab fa-viber"></i>
-              </a>
-            </div>
           </div>
         </div>
 
-        <!-- Навігація -->
-        <div class="column is-half-tablet is-one-third-desktop">
-          <div class="footer-block">
-            <h3 class="title is-5">Навігація</h3>
-            <ul class="footer-menu">
-              <li *ngFor="let item of menuItems">
-                <a (click)="scrollToSection(item.id)">{{ item.text }}</a>
-              </li>
-            </ul>
-          </div>
-        </div>
 
-        <!-- Контакти -->
-        <div class="column is-half-tablet is-one-third-desktop">
-          <div class="footer-block">
-            <h3 class="title is-5">Контакти</h3>
-            <ul class="footer-contacts">
-              <li>
-                <span class="icon is-small">
-                  <i class="fas fa-phone"></i>
-                </span>
-                <a href="tel:+380979662565">097 966 25 65</a>
-              </li>
-              <li>
-                <span class="icon is-small">
-                  <i class="fas fa-map-marker-alt"></i>
-                </span>
-                <span>вул. Рiчна, 75, Кам'янець-Подільський</span>
-              </li>
-            </ul>
-          </div>
-        </div>
       </div>
     </div>
   </section>
@@ -69,18 +27,20 @@
   <!-- Copyright -->
   <div class="footer-bottom">
     <div class="container">
-      <div class="level">
-        <div class="level-left">
-          <div class="level-item">
+      <div class="level has-text-centered">
+        <div class="level-item is-fullwidth">
+          <div>
             <p class="footer-copyright">
               &copy; {{ currentYear }} <strong>Смотрицька Вежа</strong>. Всі права захищені.
             </p>
-          </div>
-        </div>
-        <div class="level-right">
-          <div class="level-item">
             <p class="footer-developed">
-              Розроблено з <span class="has-text-danger">❤</span> для готелю
+              Розроблено 
+              <a href="https://github.com/IT-Kamianets/smotrytska-vezha.itkamianets.com" target="_blank" title="GitHub Repository">
+                <span class="icon is-small">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Vyluk</span>
+              </a>
             </p>
           </div>
         </div>
