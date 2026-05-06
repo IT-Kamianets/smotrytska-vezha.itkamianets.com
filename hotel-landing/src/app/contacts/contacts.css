@@ -1,0 +1,130 @@
+.contacts-component {
+  background-color: #ffffff;
+  padding: 4rem 0;
+}
+
+.contacts-component .title {
+  color: #4a90e2;
+  font-weight: 700;
+}
+
+.map-container {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info-container {
+  background: linear-gradient(135deg, #f0f4ff 0%, #fff0f4 100%);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.contact-item:last-of-type {
+  margin-bottom: 0;
+}
+
+.contact-icon {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.1);
+}
+
+.contact-details {
+  flex: 1;
+}
+
+.contact-details .title {
+  color: #4a90e2;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+}
+
+.contact-link {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  word-break: break-word;
+}
+
+.contact-link:hover {
+  color: #4a90e2;
+  text-decoration: underline;
+}
+
+.social-links .title {
+  color: #4a90e2;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: white;
+  color: #4a90e2;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-link:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(74, 144, 226, 0.2);
+  background: #4a90e2;
+  color: white;
+}
+
+.social-link.facebook {
+  color: #3b5998;
+}
+
+.social-link.facebook:hover {
+  background: #3b5998;
+  color: white;
+}
+
+.social-link.instagram {
+  color: #E1306C;
+}
+
+.social-link.instagram:hover {
+  background: #E1306C;
+  color: white;
+}
+
+.social-link.viber {
+  color: #7B519C;
+}
+
+.social-link.viber:hover {
+  background: #7B519C;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contacts-component {
+    padding: 2rem 0;
+  }
+
+  .contact-info-container {
+    margin-top: 1.5rem;
+  }
+}

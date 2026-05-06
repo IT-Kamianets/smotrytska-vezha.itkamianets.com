@@ -1,0 +1,53 @@
+<header class="header-component">
+  <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item logo" (click)="scrollToSection('hero')">
+        <span class="icon-text">
+          <span class="icon is-large">
+            <i class="fas fa-tower-broadcast" style="color: #4a90e2; font-size: 1.5rem;"></i>
+          </span>
+          <span class="title is-5" style="margin-left: 0.5rem; color: #4a90e2;">
+            Смотрицька Вежа
+          </span>
+        </span>
+      </a>
+
+      <a role="button" class="navbar-burger" [class.is-active]="isMenuOpen()" (click)="toggleMenu()"
+        aria-label="Toggle navigation menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" [class.is-active]="isMenuOpen()">
+      <div class="navbar-end">
+        <a class="navbar-item" (click)="scrollToSection('hero')">
+          Головна
+        </a>
+        <a class="navbar-item" (click)="scrollToSection('about')">
+          Про готель
+        </a>
+        <a class="navbar-item" (click)="scrollToSection('rooms')">
+          Номери
+        </a>
+        <a class="navbar-item" (click)="scrollToSection('gallery')">
+          Галерея
+        </a>
+        <a class="navbar-item" (click)="scrollToSection('reviews')">
+          Відгуки
+        </a>
+        <a class="navbar-item" (click)="scrollToSection('contacts')">
+          Контакти
+        </a>
+        <div class="navbar-item">
+          <div class="buttons">
+            <button (click)="bookNow()" class="button is-primary is-rounded">
+              <strong>Забронювати</strong>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>

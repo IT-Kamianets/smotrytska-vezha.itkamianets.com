@@ -1,0 +1,37 @@
+<section id="rooms" class="rooms-component section has-background-light">
+  <div class="container">
+    <div class="content">
+      <h2 class="title is-2 has-text-centered">Наші номери</h2>
+      <p class="subtitle has-text-centered">Виберіть номер, який найкраще вам підходить</p>
+
+      <div class="columns is-multiline is-centered mt-6">
+        <div class="column is-one-third-desktop is-half-tablet is-full-mobile" *ngFor="let room of rooms">
+          <div class="room-card">
+            <div class="room-image">
+              <figure class="image is-4by3">
+                <img [src]="room.image" [alt]="room.name">
+              </figure>
+              <div class="room-price-badge">
+                <span class="tag is-large is-primary">₴ {{ room.price }}/ніч</span>
+              </div>
+            </div>
+
+            <div class="room-content">
+              <h3 class="title is-5">{{ room.name }}</h3>
+              <p class="room-description">{{ room.description }}</p>
+
+              <div class="room-footer mt-4">
+                <button (click)="bookNow()" class="button is-fullwidth is-primary is-rounded">
+                  <span class="icon">
+                    <i class="fas fa-check"></i>
+                  </span>
+                  <span>Забронювати</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

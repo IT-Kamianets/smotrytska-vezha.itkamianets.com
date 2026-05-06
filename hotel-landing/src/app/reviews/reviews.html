@@ -1,0 +1,35 @@
+<section id="reviews" class="reviews-component section has-background-light">
+  <div class="container">
+    <div class="content">
+      <h2 class="title is-2 has-text-centered">Відгуки гостей</h2>
+      <p class="subtitle has-text-centered">Що кажуть про нас наші гості</p>
+
+      <div class="columns is-multiline is-centered mt-6">
+        <div class="column is-one-third-desktop is-half-tablet is-full-mobile" *ngFor="let review of reviews">
+          <div class="review-card">
+            <div class="review-header">
+              <div class="review-avatar">
+                <div class="avatar-circle">{{ review.name.charAt(0) }}</div>
+              </div>
+              <div class="review-info">
+                <h4 class="title is-6">{{ review.name }}</h4>
+                <div class="stars">
+                  <span class="icon is-small has-text-warning" *ngFor="let i of getStarArray(review.rating)">
+                    <i class="fas fa-star"></i>
+                  </span>
+                  <span class="icon is-small has-text-grey-light" *ngFor="let i of getStarArray(5 - review.rating)">
+                    <i class="fas fa-star"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-text mt-3">
+              <p>{{ review.text }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

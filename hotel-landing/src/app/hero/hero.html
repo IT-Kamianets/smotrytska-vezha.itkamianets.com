@@ -1,0 +1,36 @@
+<section id="hero" class="hero-component">
+  <div class="hero-background"
+    style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/assets/images/hero/background.jpg'); background-size: cover; background-position: center;">
+  </div>
+
+  <div class="hero-content">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="title is-1 has-text-white">Смотрицька Вежа</h1>
+        <p class="subtitle is-4 has-text-white-ter">
+          Затишний готель з чарівним видом на каньйон і старе місто Кам'янця-Подільського
+        </p>
+        <div class="buttons mt-5">
+          <button class="button is-large is-primary is-rounded" (click)="scrollToRooms()">
+            <span class="icon">
+              <i class="fas fa-door-open"></i>
+            </span>
+            <span>Переглянути номери</span>
+          </button>
+          <a href="tel:+380XXXXXXXXX" class="button is-large is-outlined is-white is-rounded">
+            <span class="icon">
+              <i class="fas fa-phone"></i>
+            </span>
+            <span>Зателефонувати</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-scroll-indicator">
+    <span class="icon is-large has-text-white">
+      <i class="fas fa-chevron-down"></i>
+    </span>
+  </div>
+</section>

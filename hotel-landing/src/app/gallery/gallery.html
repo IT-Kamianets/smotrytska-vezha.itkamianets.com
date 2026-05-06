@@ -1,0 +1,35 @@
+<section id="gallery" class="gallery-component section">
+  <div class="container">
+    <div class="content">
+      <h2 class="title is-2 has-text-centered">Галерея</h2>
+      <p class="subtitle has-text-centered">Переглянути фото наших номерів</p>
+
+      <div *ngFor="let category of categories" class="gallery-category-block mt-6">
+        <h3 class="title is-4 has-text-centered mb-4">{{ category.title }}</h3>
+        <div class="gallery-grid">
+          <div class="gallery-item" *ngFor="let image of category.images" (click)="openImage(image)">
+            <figure class="image is-square">
+              <img [src]="image.url" [alt]="image.alt" loading="lazy">
+            </figure>
+            <div class="gallery-overlay">
+              <span class="icon is-large has-text-white">
+                <i class="fas fa-search-plus"></i>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal для збільшення зображення -->
+  <div class="modal" [class.is-active]="selectedImage">
+    <div class="modal-background" (click)="closeImage()"></div>
+    <div class="modal-content">
+      <figure class="image modal-image" *ngIf="selectedImage">
+        <img [src]="selectedImage.url" [alt]="selectedImage.alt">
+      </figure>
+    </div>
+    <button class="modal-close is-large" (click)="closeImage()" aria-label="close"></button>
+  </div>
+</section>
