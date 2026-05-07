@@ -1,6 +1,7 @@
 {
   "name": "hotel-landing",
   "version": "0.0.0",
+  "homepage": "https://smotrytska-vezha.itkamianets.com/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
