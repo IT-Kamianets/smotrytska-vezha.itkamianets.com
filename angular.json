@@ -7,7 +7,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "hotel-landing": {
+    "app": {
       "projectType": "application",
       "schematics": {},
       "root": "",
